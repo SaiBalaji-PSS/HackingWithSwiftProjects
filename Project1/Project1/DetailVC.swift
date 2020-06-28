@@ -13,8 +13,12 @@ class DetailVC: UIViewController {
     var imagename:String!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+         title = imagename!
+        navigationItem.largeTitleDisplayMode = .never
         imageview.image = UIImage(named: imagename!)
+
+       
     }
     
 
