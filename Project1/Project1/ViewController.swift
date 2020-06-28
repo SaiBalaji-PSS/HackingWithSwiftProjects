@@ -14,9 +14,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBOutlet weak var listtableview: UITableView!
     var images = [String]()
     var selectedimage:String!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         
+        navigationController?.navigationBar.prefersLargeTitles = true
+       
+      
         let fm = FileManager.default
         
         let path = Bundle.main.resourcePath!
