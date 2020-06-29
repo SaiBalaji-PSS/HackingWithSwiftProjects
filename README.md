@@ -23,3 +23,9 @@ A repo which has source code for iOS 14 HackingWithSwift (UIKit) projects made b
 ![Screenshot 2020-06-29 at 7 48 44 AM](https://user-images.githubusercontent.com/51410810/85966301-f6a25980-b9dc-11ea-8e7b-e73c87ed9ef9.png)
 ![Screenshot 2020-06-29 at 7 49 08 AM](https://user-images.githubusercontent.com/51410810/85966318-04f07580-b9dd-11ea-84c6-2ad875744091.png)
 ![Screenshot 2020-06-29 at 7 49 21 AM](https://user-images.githubusercontent.com/51410810/85966330-0cb01a00-b9dd-11ea-8178-05ed364e7235.png)
+
+# Project-Four Easy Browser
+
+![Screenshot 2020-06-29 at 2 22 08 PM](https://user-images.githubusercontent.com/51410810/85993506-13a64f00-ba14-11ea-8873-c858441810da.png)
+![Screenshot 2020-06-29 at 2 22 19 PM](https://user-images.githubusercontent.com/51410810/85993513-16a13f80-ba14-11ea-8a5f-9a616697e30c.png)
+![Screenshot 2020-06-29 at 2 22 19 PM](https://user-images.githubusercontent.com/51410810/85993520-17d26c80-ba14-11ea-950b-1f17790e7552.png)
