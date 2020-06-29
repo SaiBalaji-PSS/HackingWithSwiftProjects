@@ -34,5 +34,5 @@ A repo which has source code for iOS 14 HackingWithSwift (UIKit) projects made b
 
 ![Screenshot 2020-06-29 at 7 36 56 PM](https://user-images.githubusercontent.com/51410810/86016012-ec657700-ba3f-11ea-838c-30dfbf06d0de.png)
 ![Screenshot 2020-06-29 at 7 34 27 PM](https://user-images.githubusercontent.com/51410810/86016022-eec7d100-ba3f-11ea-9751-2f270a8d1869.png)
-![Screenshot 2020-06-29 at 7 33 59 PM](https://user-images.githubusercontent.com/51410810/86016028-f0919480-ba3f-11ea-8183-b111f6f2a569.png)
+![Screenshot 2020-06-29 at 7 39 21 PM](https://user-images.githubusercontent.com/51410810/86016325-47976980-ba40-11ea-8a96-b6aaf462df2f.png)
 ![Screenshot 2020-06-29 at 7 33 35 PM](https://user-images.githubusercontent.com/51410810/86016035-f25b5800-ba3f-11ea-85da-877d6e87bf3a.png)
