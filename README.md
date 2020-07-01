@@ -56,4 +56,7 @@ A repo which has source code for iOS 14 HackingWithSwift (UIKit) projects made b
 
 # Project-Six JSON Parsing
 
+![Screenshot 2020-07-01 at 12 07 47 PM](https://user-images.githubusercontent.com/51410810/86211343-dd8fd900-bb93-11ea-9f22-bdcbfabccba9.png)
+![Screenshot 2020-07-01 at 12 08 08 PM](https://user-images.githubusercontent.com/51410810/86211349-e1236000-bb93-11ea-8c1f-cdbe485192a8.png)
+![Screenshot 2020-07-01 at 12 09 30 PM](https://user-images.githubusercontent.com/51410810/86211356-e41e5080-bb93-11ea-9ee3-cf4203b2f4d4.png)
 
