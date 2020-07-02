@@ -22,18 +22,23 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: .add, style: .plain, target: self, action: #selector(pickImage))
         
+        navigationController?.isToolbarHidden = false
         
-      
+        
+        let deletebtn = UIBarButtonItem(title: "Delete All", style: .plain, target: self, action: #selector(deleteall))
+        
+        
+        toolbarItems = [deletebtn]
         
         title = "Face to Name"
         
         
         //Fetch the DataObject back
-       if let dataToBeFetched = userdefault.object(forKey: "person") as? Data
+       if let dataToBeFetched = userdefault.object(forKey: "people") as? Data
        {
           //unarchiveTopLevelObjectWithData() method of NSKeyedUnarchiver to convert Data object  back to an object graph – i.e., our array of Person objects.
-        if let persondata = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dataToBeFetched) as? Person{
-            people.append(persondata)
+        if let peopledata = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(dataToBeFetched) as? [Person]{
+            people = peopledata
         }
         
        }
@@ -125,16 +130,16 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
     }
     
     
-    func saveData(person: Person)
+    func saveData()
     {
         do
         {
             //archivedData() method of NSKeyedArchiver, which turns an object graph into a Data object
-            let dataToBeSaved = try NSKeyedArchiver.archivedData(withRootObject: person, requiringSecureCoding: false)
+            let dataToBeSaved = try NSKeyedArchiver.archivedData(withRootObject: people, requiringSecureCoding: false)
             
             
             //Save the data
-            userdefault.set(dataToBeSaved,forKey: "person")
+            userdefault.set(dataToBeSaved,forKey: "people")
             
             
         }
@@ -191,17 +196,10 @@ class ViewController: UIViewController,UICollectionViewDelegate,UICollectionView
             p.name = newname!
             self.personcollectionview.reloadData()
             
-            self.saveData(person:p)
+            self.saveData()
         }))
         
         ac.addAction(UIAlertAction(title: "Cancel", style:.cancel, handler: nil))
-        
-        ac.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (action) in
-            self.userdefault.removeObject(forKey: "person")
-            
-            self.people.remove(at: indexPath.row)
-            self.personcollectionview.reloadData()
-        }))
        
         
         present(ac, animated: true, completion: nil)
